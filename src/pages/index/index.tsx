@@ -3,6 +3,7 @@ import { View } from '@tarojs/components'
 import {
   Button, Tabbar, TabbarItem
 } from "@nutui/nutui-react-taro";
+import Taro from '@tarojs/taro';
 import './index.css'
 
 function Index() {
@@ -21,7 +22,12 @@ function Index() {
         <TabbarItem tabTitle="分类" icon="category" />
         <TabbarItem tabTitle="发现" icon="find" />
         <TabbarItem tabTitle="购物车" href="https://m.jd.com" icon="cart" />
-        <TabbarItem tabTitle="我的" href="/" icon="my" />
+        <View className="user" onClick={() => {
+          Taro.navigateTo({
+            url: '../user/user'
+          })
+        }}>
+          <TabbarItem tabTitle="我的" href="" icon="my" /></View>
       </Tabbar>
     </View>
   )

@@ -1,0 +1,65 @@
+/* @import "~taro-ui/dist/style/components/modal.scss"; */
+/* 页面 */
+.user_main{
+    background-color:rgba(225, 225, 225, 0.2);
+    height:100vh;
+}
+/* 点击登陆容器 */
+.user_container{
+    display: flex;
+    position: relative;
+    background-color:#fff; 
+    margin-top: 1px;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+/* 头像 */
+.user_hand{
+    height: 80px;
+    width: 80px;
+    text-align:center;
+    line-height: 80px;
+    border-radius: 30%;
+    background-color: rgb(215, 215, 215);
+    color: azure;
+    margin: 20px 15px 0px 30px;
+}
+/* 未登录 */
+.notLogin{
+    font-size: 52px;
+    font-weight: bolder;
+    margin: 20px 10px;
+    line-height: 140px;
+}
+/* 常用工具容器 */
+.user_tools{
+    position: relative;
+    background-color:#fff; 
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px 0;
+    height: 40vh;
+}
+/* 常用工具 */
+.tool_title{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+/* 总工具布局 */
+.tools{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+
+/* 绑定学号 */
+.bindingStuId{
+    font-size: 25px;
+    height: 10px;
+    margin-top: -30px;
+    font-weight: 500;
+}
+.checkBindingStuId{
+    color: blue;
+}
