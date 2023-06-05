@@ -8,7 +8,8 @@ import {
     Tabbar, TabbarItem
 } from "@nutui/nutui-react-taro";
 const XiaoxinTabbar = () => (
-    <Tabbar bottom unactiveColor="#7d7e80" activeColor="#2d60df" className='Tabbar'>
+    <Tabbar bottom unactiveColor="#7d7e80" activeColor="#2d60df" className='Tabbar' onSwitch={(child, id) => {console.log(id);
+     }}>
         <TabbarItem tabTitle="首页" href="" icon={home} />
         <TabbarItem tabTitle="考勤" icon={check} />
         <TabbarItem tabTitle="积分" icon={integral} />
